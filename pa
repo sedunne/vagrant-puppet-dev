@@ -1,0 +1,2 @@
+#!/bin/bash
+/opt/puppetlabs/bin/puppet apply -t --modulepath /vagrant/modules --hiera_config /vagrant/hiera/hiera.yaml "$@"
