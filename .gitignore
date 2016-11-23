@@ -2,3 +2,6 @@ modules/*
 manifests/*
 Puppetfile
 vendor/*
+.bundle/*
+## maybe not needed but w/e
+Gemfile.lock
