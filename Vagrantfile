@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
   # centos 7
   config.vm.define "centos-7" do |centos|
     centos.vm.hostname = "centos-7.local"
-    centos.vm.box = "bento/centos-7.2"
+    centos.vm.box = "bento/centos-7.3"
     config.vm.provision "shell", inline: <<-SHELL
       yum install -y -q \
         https://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm \
@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   # centos 6
   config.vm.define "centos-6" do |centos|
     centos.vm.hostname = "centos-6.local"
-    centos.vm.box = "bento/centos-6.8"
+    centos.vm.box = "bento/centos-6.9"
     config.vm.provision "shell", inline: <<-SHELL
       yum install -y -q \
         https://yum.puppetlabs.com/puppetlabs-release-pc1-el-6.noarch.rpm \
